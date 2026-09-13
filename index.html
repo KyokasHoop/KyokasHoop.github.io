@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tapu's Lair</title>
+
+  <style>
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background-color: #0b0910;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+
+    /* INTRO */
+
+    .intro {
+      min-height: 100vh;
+
+      background-image:
+        linear-gradient(#08051188, #080511dd),
+        url("cave-bg.jpg");
+
+      background-size: cover;
+      background-position: center;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      padding: 20px;
+    }
+
+
+    .intro h1 {
+      font-size: 65px;
+      color: #c4a7ff;
+
+      text-shadow:
+        0 0 15px #8b5cff,
+        0 0 30px #4c7cff;
+
+      margin-bottom: 10px;
+    }
+
+
+    .intro p {
+      max-width: 520px;
+
+      color: #dddddd;
+
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+
+    /* BUTTON */
+
+    .button {
+      display: inline-block;
+
+      margin-top: 20px;
+
+      padding: 12px 22px;
+
+      background-color: #7c62d9;
+
+      color: white;
+
+      text-decoration: none;
+
+      border-radius: 10px;
+
+      transition: 0.2s;
+    }
+
+
+    .button:hover {
+      background-color: #a68cff;
+
+      transform: translateY(-2px);
+    }
+
+
+    /* ABOUT SECTION */
+
+    .profile {
+      min-height: 100vh;
+      padding: 40px 20px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      background:
+        radial-gradient(
+          circle at 15% 20%,
+          #295cff33,
+          transparent 250px
+        ),
+
+        radial-gradient(
+          circle at 85% 70%,
+          #ff4fa333,
+          transparent 250px
+        ),
+
+        #0b0910;
+    }
+
+
+    .profile img {
+      width: 170px;
+      height: 170px;
+
+      border-radius: 50%;
+
+      border: 4px solid #9d82ff;
+
+      object-fit: cover;
+
+      box-shadow:
+        0 0 20px #865cff88;
+    }
+
+
+    .profile h2 {
+      font-size: 38px;
+
+      color: #bca7ff;
+
+      margin-bottom: 5px;
+    }
+
+
+    .username {
+      color: #8fb9ff;
+    }
+
+
+    .about {
+      max-width: 520px;
+
+      margin: 20px auto;
+
+      line-height: 1.7;
+
+      color: #cccccc;
+    }
+
+
+    /* SMALL DECORATIONS */
+
+    .colors {
+      margin-top: 35px;
+    }
+
+
+    .dot {
+      display: inline-block;
+
+      width: 12px;
+      height: 12px;
+
+      margin: 5px;
+
+      border-radius: 50%;
+    }
+
+
+    .purple {
+      background-color: #9d82ff;
+    }
+
+
+    .blue {
+      background-color: #5c8cff;
+    }
+
+
+    .pink {
+      background-color: #ff65ac;
+    }
+
+
+    .cyan {
+      background-color: #5de4df;
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- INTRO -->
+
+  <div class="intro">
+
+    <h1>Tapu's Lair</h1>
+
+    <p>
+      Welcome to my little cave on the internet.
+      Games, music, random stuff, and whatever else
+      I feel like putting here.
+    </p>
+
+    <a class="button" href="#VeritaCordis">
+      Enter the Cave
+    </a>
+
+  </div>
+
+
+
+  <!-- ABOUT -->
+
+  <div class="profile" id="VeritaCordis">
+
+    <img
+      src="profile.jpg"
+      alt="Tapu's profile picture"
+    >
+
+    <h2>Tapu</h2>
+
+    <p class="username">
+      Welcome to my little corner of the internet.
+    </p>
+
+
+    <p class="about">
+      Hi! I'm Tapu. I'm learning HTML and making my first website.
+
+      I'll probably put games, music, links,
+      and random things I like here.
+    </p>
+
+
+    <a
+      class="button"
+      href="https://x.com/VeritaCordis"
+      target="_blank"
+    >
+      Twitter
+    </a>
+
+
+    <div class="colors">
+
+      <span class="dot purple"></span>
+      <span class="dot blue"></span>
+      <span class="dot pink"></span>
+      <span class="dot cyan"></span>
+
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
